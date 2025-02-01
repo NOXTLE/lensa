@@ -1,0 +1,60 @@
+.card{
+    box-shadow: 10px 10px 10px rgb(24, 24, 24);
+   
+    object-fit: cover;
+    object-position: center;
+   margin:10px;
+   
+   border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.04);
+    z-index: 100
+
+}
+.card img{
+    position: relative;
+ 
+    border-radius: 10px;
+  
+}
+.option{
+    position: absolute;
+    padding:10px 15px; 
+    bottom:0;
+    top:0;
+    left:0;
+    right: 0;
+    border-radius: 10px;
+    
+    backdrop-filter:blur(2px);
+  
+}
+.option button{
+    padding:10px 10px;
+    border-radius: 50%;
+    background-color: rgb(12, 169, 91);
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.option button:hover{
+    background-color: green;
+} 
+.option svg{
+    position: relative;
+    transition: all 0.4s ease-in-out;
+  border:none;
+  outline: none;
+  cursor: pointer;
+    
+}
+.op{
+    justify-self: flex-end;
+    align-self: flex-end;
+    border-top-right-radius:10px ;border-bottom-right-radius:10px ;
+    font-family:  "Silkscreen";
+}

@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    user-select: none;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+nav{
+  font-family: "Orbitron", serif;
+  color:white;
+}
+nav h1{
+position:relative;
+letter-spacing: 5px;
+}
+
+input{
+  padding:10px;
+  color:white;
+  font-family: "Silkscreen";
+  margin-top:10px;
+}
+.list {
+  margin-top: 40px;
+  column-width: 200px;
+  column-count: 3;
+  column-gap: 2px;
+  min-height: 100vh;
+}
+*::-webkit-scrollbar{
+  width: 0px;
+  background: transparent;
+  height: 0px;
+}
+.loader{
+  position:absolute;
+  top:-50%;
+  left:-50%;
+  transform: translate(50%,50%);
+}
+.scroll-top{
+  padding:10px;
+}
+
+@media (max-width:768px){
+.scroll-top{
+  padding:12px;
+  z-index: 1000;
+}
+}
+*{
+  scroll-behavior: smooth;
+}
+.logo{
+  margin-bottom: 20px;
+}
+.container{
+  padding-top:20px;
+}
